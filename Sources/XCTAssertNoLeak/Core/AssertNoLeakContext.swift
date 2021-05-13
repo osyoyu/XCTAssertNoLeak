@@ -27,7 +27,7 @@ public final class AssertNoLeakContext {
         internalContext.elements.append(.init(node: Node(from: object), file: file, line: line))
     }
     
-    @available(*, deprecated, message: "`name` field isn't support no longer")
+    @available(*, deprecated, message: "`name` field is no longer supported")
     public func traverse(name: String, object: AnyObject, file: StaticString=#file, line: UInt=#line) {
         internalContext.elements.append(.init(node: Node(from: object), file: file, line: line))
     }

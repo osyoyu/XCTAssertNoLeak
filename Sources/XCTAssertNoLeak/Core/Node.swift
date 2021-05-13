@@ -151,6 +151,6 @@ class Node {
     func assertMessage() -> String? {
         let paths = leakedObjectPaths()
         if paths.isEmpty { return nil }
-        return "\(paths.count) object occured memory leak." + "\n" + paths.map { "- \($0.pathString(with: "self"))" }.joined(separator: "\n")
+        return "\(paths.count) object(s) are leaking memory." + "\n" + paths.map { "- \($0.pathString(with: "self"))" }.joined(separator: "\n")
     }
 }

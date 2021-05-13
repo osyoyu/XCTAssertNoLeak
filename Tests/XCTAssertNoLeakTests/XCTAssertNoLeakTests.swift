@@ -35,7 +35,7 @@ final class XCTAssertNoLeakTests: XCTestCase {
             assertMessages(MemoryLeakObject()),
             [
                 """
-1 object occured memory leak.
+1 object(s) are leaking memory.
 - self
 """
             ]
@@ -86,7 +86,7 @@ final class XCTAssertNoLeakTests: XCTestCase {
             assertMessages(RootObject()),
             [
                 """
-1 object occured memory leak.
+1 object(s) are leaking memory.
 - self.parent
 """
             ]
@@ -113,7 +113,7 @@ final class XCTAssertNoLeakTests: XCTestCase {
             assertMessages(RootObject()),
             [
                 """
-1 object occured memory leak.
+1 object(s) are leaking memory.
 - self.parent?
 """
             ]
@@ -143,7 +143,7 @@ final class XCTAssertNoLeakTests: XCTestCase {
             assertMessages(RootObject()),
             [
                 """
-1 object occured memory leak.
+1 object(s) are leaking memory.
 - self.parent
 """
             ]
@@ -193,7 +193,7 @@ final class XCTAssertNoLeakTests: XCTestCase {
             },
             [
                 """
-1 object occured memory leak.
+1 object(s) are leaking memory.
 - self
 """
             ]
@@ -238,7 +238,7 @@ final class XCTAssertNoLeakTests: XCTestCase {
             assertMessages(Box()),
             [
                 """
-1 object occured memory leak.
+1 object(s) are leaking memory.
 - self
 """
             ]
